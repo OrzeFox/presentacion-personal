@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'pixelart';
+    src: url(pixelart.ttf);
+}
+p{
+    font-family: 'pixelart' , sans-serif;
+}
