@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Presentacion</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <p>ESTO ES MUY IMPORTANTE</p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Inicio</a>
+        </li>
+        <li>
+          <a href="#experiencia">Experiencia</a>
+        </li>
+        <li>
+          <a href="#pasatiempos">Pasatiempos</a>
+        </li>
+        <li>
+          <a href="#redes-sociales">Redes Sociales</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <div class="home-container">
+        <h1>¡Bienvenidos!</h1>
+        <p>
+          ¡Hola! Soy <strong>DIEGO</strong>, Gracias por visitar mi pagina.
+          Espero te agrade.
+        </p>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <div class="exp-container">
+        <h2>Experiencia</h2>
+        <p class="parrafo1-exp" id="p1-exp">
+          Estoy en proceso de aprendizaje en la programación. Actualmente, estoy
+          realizando un bootcamp en Factoria F5 para convertirme en un
+          desarrollador web completo. Deseo mejorar mis habilidades y seguir
+          aprendiendo en este campo tan fascinante.
+        </p>
+        <p class="parrafo2-exp" id="p2-exp">
+          Me gustaría especializarme en programación de videojuegos en el
+          futuro. Quiero formar parte de un equipo de desarrollo donde podamos
+          crear nuestros propios videojuegos y convertir nuestras ideas en
+          realidad.
+        </p>
+      </div>
+    </section>
+    <section id="pasatiempos">
+      <h3>PASATIEMPOS</h3>
+      <div class="carrousel">
+        <div class="grande">
+          <img src="assets/images/habitacion.jpg" alt="Habitación" class="img" />
+          <img src="assets/images/videogames.gif" alt="Videojuegos" class="img" />
+          <img
+            src="assets/images/imaginedragons.jpg"
+            alt="Imagine Dragons"
+            class="img"
+          />
+          <img src="assets/images/programar.jpg" alt="Programación" class="img" />
+          <img src="assets/images/videogames.gif" alt="Videojuegos" class="img" />
+        </div>
+        <ul class="puntos">
+          <li class="punto activo"></li>
+          <li class="punto"></li>
+          <li class="punto"></li>
+          <li class="punto"></li>
+          <li class="punto"></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer id="redes-sociales">
+      <div class="container">
+        <h2>Sígueme en mis redes sociales:</h2>
+        <ul class="redes-sociales-lista">
+          <li>
+            <a href="https://www.linkedin.com/in/diego-cruz-3954b5128" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/OrzeFox" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/github.png" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/da.shady.cm/" target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/instagram.png" alt="Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="textos.js"></script>
+    <script src="enlaces.js"></script>
+    <script src="carrousel.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

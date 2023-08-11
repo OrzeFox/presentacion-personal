@@ -1,7 +1,212 @@
 @font-face {
-    font-family: 'pixelart';
-    src: url(pixelart.ttf);
+  font-family: "pixelart";
+  src: url(assets/PixelOperator.ttf);
 }
-p{
-    font-family: 'pixelart' , sans-serif;
+
+* {
+  font-family: "pixelart", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #100e1b;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2%;
+}
+
+nav ul li a {
+  color: rgb(0, 177, 71);
+  font-size: 3em;
+}
+
+#home {
+  text-align: center;
+  font-size: 3em;
+  padding: 3%;
+  background-image: url(/assets/images/7392521.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  background-color: rgba(0, 0, 0, 0.671);
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+.exp-container {
+  background-color: #696b9b;
+  height: 100vh;
+  display: flex;
+  padding: 5%;
+  background-image: url(assets/images/lvl_up.jpg);
+  background-size: cover;
+  letter-spacing: 0.2em;
+  flex-direction: column;
+}
+
+.exp-container h2 {
+  display: flex;
+  font-size: 3em;
+  color: white;
+  align-self: center;
+  justify-self: center;
+}
+
+.parrafo1-exp {
+  font-size: 1.5em;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.614);
+  color: white;
+  margin: 2% 0;
+}
+
+.parrafo2-exp {
+  font-size: 1.5em;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.614);
+  color: white;
+  margin: 2% 0;
+  align-self: flex-end;
+}
+
+#pasatiempos {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url(assets/images/pixel-jeff-rog-demo1.jpg);
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pasatiempos h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(245, 245, 245);
+  font-size: 3em;
+  width: 40%;
+  background-color: #4046ff93;
+  border-radius: 5%;
+  margin: 0 1em;
+  max-height: 80%;
+}
+.carrousel {
+  height: 100%;
+  width: 100%;
+  max-width: 120em;
+  padding: 2em;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+
+  overflow: hidden;
+}
+
+.carrousel .grande {
+  height: 70%;
+  width: 500%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+ align-items:flex-start;
+  border-radius: 1em;
+  padding: 2em;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+
+}
+
+.carrousel .img {
+  max-height: 63vh;
+  width: calc(100% / 5 - 4em);
+  transition: all 0.4s ease;
+  border-radius: 1em;
+}
+
+.carrousel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0.4em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrousel .punto {
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  transition: all 0.4s ease;
+  border-radius: 1em;
+  background-image: url(assets/images/off-button.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.carrousel .punto.activo {
+
+  background-image: url(assets/images/on-button.png);
+}
+#redes-sociales {
+  background-color: #100e1b;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+
+#redes-sociales .container {
+  display: flex;
+  justify-content:space-around;
+}
+
+#redes-sociales h2 {
+  font-size: 2.5em;
+
+}
+
+.redes-sociales-lista {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.redes-sociales-lista li a {
+  color: rgb(83, 0, 171);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+
+
+.redes-sociales-lista li a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.redes-sociales-lista li a:hover img {
+  transform: scale(1.2);
 }
